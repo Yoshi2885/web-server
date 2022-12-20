@@ -1,3 +1,11 @@
+body {
+  background: linear-gradient(90deg, rgb(220, 175, 237), rgb(20, 25, 40));
+}
+
+hr {
+  border-top: 3px double #ccc;
+}
+
 input {
   padding: 5px;
   border: 1px solid gray;

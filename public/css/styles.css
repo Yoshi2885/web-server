@@ -1,9 +1,10 @@
-h1 {
-  color: green;
+input {
+  padding: 5px;
+  border: 1px solid gray;
 }
 
-input {
-  padding: 10px;
+select {
+  padding: 5px;
   border: 1px solid gray;
 }
 
@@ -12,4 +13,77 @@ button {
   border: 1px solid gray;
   background-color: tomato;
   color: white;
+  font-weight: 600;
+}
+
+#startBtn {
+  padding: 7px 15px;
+  border: 1px solid gray;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+#startBtn:hover {
+  border: 1px solid gray;
+  background-color: tomato;
+  color: white;
+  transition: all 0.5s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#submitBtn {
+  padding: 7px 15px;
+  border: 1px solid gray;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+#submitBtn:hover {
+  border: 1px solid gray;
+  background-color: tomato;
+  color: white;
+  transition: all 0.5s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 200%;
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 150%;
+  color: crimson;
+  text-decoration: underline;
+}
+
+span {
+  color: crimson;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+#memo {
+  font-size: 45%;
+}
+
+#icon {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#startBtn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slide_img {
+  margin-left: auto;
+  margin-right: auto;
 }

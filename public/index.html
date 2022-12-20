@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,12 +8,80 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>クイズ 1+1は?</h1>
-    <form action="/api/v1/quiz" method="POST">
-      <input type="text" name="answer" placeholder="答えを入力してね" />
-      <button type="submit">送信!!</button>
+    <h1>xxxお問い合わせフォーム</h1>
+
+    <div>
+      <img id="icon" src="img/icon.png" alt="アイコン" />
+    </div>
+
+    <h2>Infomation</h2>
+
+    <p>
+      ここは、ooo関わる質問を相談するフォームになります。<br />
+      現在、xxx教育中の為、<span>ちんぷんかんぷんな</span>
+      回答をすると思いますが、<br />
+      使いまくって、この子を育ててください(製作者)。
+    </p>
+
+    <div>
+      <img src="img/1.png" id="slide_img" class="slider" width="500px" />
+      <input id="startBtn" type="button" value="開始" onclick="start()" />
+    </div>
+
+    <p id="memo">
+      製作者φ(..)メモメモ<br />
+      入力禁止処理をjavascriptで対応。<br />
+      装飾をCSSで対応。<br />
+      入力されたデータを元に、csvファイルを作成出来るようにしたい。
+    </p>
+
+    <form>
+      <div>
+        <label>教えて!! : </label>
+        <select name="item">
+          <option value="">聞きたい項目を選択してね</option>
+          <option value="personal">詳しい人を教えて!!</option>
+          <option value="where">どこで調べたらいいか教えて!!</option>
+          <option value="serch">報告書などを探して!!</option>
+          <option value="play">遊ぼうよ!!</option>
+          <option value="other">その他</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="name">お名前: </label>
+        <input id="name" type="text" name="name" placeholder="お名前" />
+      </div>
+
+      <div>
+        <label for="mail">メールアドレス：</label>
+        <input
+          id="mail"
+          type="email"
+          name="email"
+          placeholder="メールアドレス"
+        />
+      </div>
+
+      <div>
+        <label for="comment">質問内容: </label><br />
+        <textarea
+          id="comment"
+          rows="10"
+          cols="50"
+          placeholder="ここに質問したい項目を入力してね"
+        ></textarea>
+      </div>
+
+      <div class="btn-area">
+        <input id="submitBtn" type="submit" value="教えて!!" />
+      </div>
+      <div>
+        <br />
+        <hr />
+      </div>
     </form>
-    <img src="img/150.png" />
+
     <script src="js/app.js"></script>
   </body>
 </html>
